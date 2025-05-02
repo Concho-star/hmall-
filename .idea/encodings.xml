@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Cart-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Item-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Pay-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Trade-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/User-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hm-api/src/main/java" charset="UTF-8" />

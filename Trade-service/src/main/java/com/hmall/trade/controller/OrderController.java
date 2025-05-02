@@ -1,7 +1,7 @@
 package com.hmall.trade.controller;
 
+import com.hmall.api.dto.OrderFormDTO;
 import com.hmall.common.utils.BeanUtils;
-import com.hmall.trade.domain.dto.OrderFormDTO;
 import com.hmall.trade.domain.vo.OrderVO;
 import com.hmall.trade.service.IOrderService;
 import io.swagger.annotations.Api;

@@ -12,6 +12,7 @@
         <module name="Trade-service" />
         <module name="hm-common" />
         <module name="hm-service" />
+        <module name="Pay-service" />
         <module name="Cart-service" />
         <module name="hm-api" />
       </profile>
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Cart-service" options="-parameters" />
       <module name="Item-service" options="-parameters" />
+      <module name="Pay-service" options="-parameters" />
       <module name="Trade-service" options="-parameters" />
       <module name="User-service" options="-parameters" />
       <module name="hm-api" options="-parameters" />

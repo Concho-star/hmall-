@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: User-service
+    name: user-service
   profiles:
     active: dev
   datasource:
@@ -10,6 +10,9 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: ${hm.db.pw}
+  cloud:
+    nacos:
+      server-addr: 172.16.196.131:8848
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
@@ -45,5 +48,7 @@ hm:
     alias: hmall
     password: hmall123
     tokenTTL: 30m
-
+feign:
+  okhttp:
+    enabled: true
 # keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
