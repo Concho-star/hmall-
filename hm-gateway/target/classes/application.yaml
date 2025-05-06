@@ -15,7 +15,11 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**
+            - Path=/users/**,/addresses/**
+        - id: cart-service
+          uri: lb://cart-service
+          predicates:
+            - Path=/carts/**
         - id: pay-service
           uri: lb://pay-service
           predicates:
@@ -24,4 +28,17 @@ spring:
           uri: lb://trade-service
           predicates:
             - Path=/orders/**
-
+      default-filters:
+        - PrintAny=1,2,3
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi

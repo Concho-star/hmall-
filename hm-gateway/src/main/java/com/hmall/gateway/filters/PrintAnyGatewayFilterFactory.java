@@ -5,11 +5,12 @@ import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.OrderedGatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import java.util.List;
-
+@Component
 public class PrintAnyGatewayFilterFactory extends AbstractGatewayFilterFactory<PrintAnyGatewayFilterFactory.Config> {
 
     @Override
@@ -36,8 +37,8 @@ public class PrintAnyGatewayFilterFactory extends AbstractGatewayFilterFactory<P
         private String c;
     }
 
-    public PrintAnyGatewayFilterFactory(Class<Config> configClass) {
-        super(configClass);
+    public PrintAnyGatewayFilterFactory() {
+        super(Config.class);
     }
 
     @Override
