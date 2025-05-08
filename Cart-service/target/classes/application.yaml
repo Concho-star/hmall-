@@ -13,7 +13,8 @@ feign:
 hm:
   db:
     database: hm-cart
-    swagger: "黑马商城购物车服务接口文档"
+  swagger:
+    title: "黑马商城购物车服务接口文档"
     package: com.hmall.cart.controller
 spring:
   cloud:
