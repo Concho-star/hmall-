@@ -5,6 +5,12 @@ spring:
     name: pay-service
   profiles:
     active: dev
+  rabbitmq:
+    host: 172.16.196.133 # 你的虚拟机IP
+    port: 5672 # 端口
+    virtual-host: /hmall # 虚拟主机
+    username: hmall # 用户名
+    password: 123 # 密码
   datasource:
     url: jdbc:mysql://${hm.db.host}:3306/hm-pay?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
