@@ -1,1 +1,1 @@
-# hmall-
+该项目是企业级分布式电商架构的完整实战范本，以电商全链路业务（商品管理→购物车→订单→支付→搜索）为载体，系统性拆解从单体到微服务架构的技术演进路径。技术栈聚焦云原生生态，深度整合SpringCloud Alibaba微服务治理体系（Nacos动态服务发现、Feign+Sentinel实现优雅降级、Seata分布式事务）、容器化基础设施（Docker+K8s部署架构设计）、分布式中间件（RabbitMQ异步解耦订单流程、Redis实现库存热点缓存+分布式锁防超卖、Elasticsearch构建毫秒级商品搜索），并配套MyBatis-Plus实现复杂业务的高效CRUD。
